@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+            xmlns:local="clr-namespace:IntecApp.Views.Tabbed"
+            x:Class="IntecApp.MainPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            >
+
+    <NavigationPage.TitleView>
+        <Label
+            FontAttributes="Bold"
+            FontSize="Title"
+            HorizontalOptions="Start"
+            Text="Discovery"
+            TextColor="Black"/>
+
+    </NavigationPage.TitleView>
+
+    <TabbedPage.Children>
+        <local:HomePage Title="Home" IconImageSource="home.png"/>
+        <local:DiscoveryPage Title="Discovery" IconImageSource="placeholder.png"/>
+        <local:BookMarkPage Title="Book Mark" IconImageSource="bookmark.png"/>
+        <local:TopsFoodsPage Title="Top Foods" IconImageSource="fast_food.png"/>
+        <local:ProfilePage Title="Profile" IconImageSource="user.png"/>
+
+    </TabbedPage.Children>
+
+</TabbedPage>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntecApp.Views.SignUpPage"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             NavigationPage.IconColor="#e4000f">
+
+    <Grid
+        Padding="10"
+        Margin="10"
+        VerticalOptions="StartAndExpand"
+        RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
+        ColumnDefinitions="10*, 90*"
+        >
+
+        <Image 
+            Grid.Column="0"
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            Source="Intec_logo.png" 
+            WidthRequest="200" 
+            HeightRequest="200" 
+            Margin="20,100,20,100"/>
+        
+        <Label 
+            Grid.Column="0"
+            Grid.Row="1"
+            HorizontalTextAlignment="Center"
+            Text="👨‍🎓"
+            VerticalTextAlignment="Center"
+            />
+
+        <Entry
+            x:Name="nameEntry"
+            Grid.Row="1"
+            Grid.Column="1"
+            Placeholder="Name"
+            TextColor="Black"
+            PlaceholderColor="Black"
+            Keyboard="Email"
+            Text="{Binding User.Name}">
+
+            <Entry.Effects>
+                <xct:RemoveBorderEffect />
+            </Entry.Effects>
+        </Entry>
+
+        <Label 
+            Grid.Column="0"
+            Grid.Row="2"
+            HorizontalTextAlignment="Center"
+            Text="📧"
+            VerticalTextAlignment="Center"
+            />
+
+        <Entry
+            x:Name="emailEntry"
+            Grid.Row="2"
+            Grid.Column="1"
+            Placeholder="Email"
+            TextColor="Black"
+            PlaceholderColor="Black"
+            Keyboard="Email"
+            Text="{Binding User.Email}">
+
+            <Entry.Effects>
+                <xct:RemoveBorderEffect />
+            </Entry.Effects>
+        </Entry>
+
+        <Label 
+            Grid.Column="0"
+            Grid.Row="3"
+            HorizontalTextAlignment="Center"
+            Text="🔒"
+            VerticalTextAlignment="Center"
+            />
+
+        <Entry
+            x:Name="passwordEntry"
+            Grid.Row="3"
+            Grid.Column="1"
+            Placeholder="Password"
+            TextColor="Black"
+            PlaceholderColor="Black"
+            IsPassword="True"
+            Text="{Binding User.Password}">
+
+            <Entry.Effects>
+                <xct:RemoveBorderEffect />
+            </Entry.Effects>
+        </Entry>
+
+        <Label 
+            Grid.Column="0"
+            Grid.Row="4"
+            HorizontalTextAlignment="Center"
+            Text="🔒"
+            VerticalTextAlignment="Center"
+            />
+
+        <Entry
+            x:Name="confirmPasswordEntry"
+            Grid.Row="4"
+            Grid.Column="1"
+            Placeholder="Confirm Password"
+            TextColor="Black"
+            PlaceholderColor="Black"
+            IsPassword="True"
+            Text="{Binding User.ConfirmPassword}">
+
+            <Entry.Effects>
+                <xct:RemoveBorderEffect />
+            </Entry.Effects>
+        </Entry>
+
+        <Button 
+            Grid.Row="5"
+            Grid.ColumnSpan="2"
+            x:Name="LoginButton"  
+            Margin="20,30,20,20" 
+            BackgroundColor="#e4000f" 
+            TextColor="White" 
+            Text="Registrar" 
+            Command="{Binding SignUpCommand}"
+            />
+
+    </Grid>
+</ContentPage>
