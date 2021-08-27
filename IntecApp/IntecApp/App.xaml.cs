@@ -11,11 +11,11 @@ namespace IntecApp
         {
             InitializeComponent();
 
-            /*MainPage = new NavigationPage(new LoginPage())
+            MainPage = new NavigationPage(new LoginPage())
             {
                 BarBackgroundColor = Color.White
-            };*/
-            MainPage = new MainPage();
+            };
+            //MainPage = new MainPage();
         }
 
         protected override void OnStart()

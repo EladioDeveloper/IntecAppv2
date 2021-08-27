@@ -3,22 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IntecApp.Views.Tabbed.DiscoveryCardView"
              x:Name="discoveryCardView">
+    <Grid 
+        Padding="10"
+        VerticalOptions="Center"
+        RowDefinitions="Auto, Auto, Auto"
+        ColumnDefinitions="*">
+
+        <Image
+            Grid.Column="0"
+            Grid.Row="0"
+            Grid.ColumnSpan="1"
+            Source="{Binding Image}"
+            Margin="20"
+            />
+
+        <Label
+            Grid.Column="0"
+            Grid.Row="1"
+            Grid.ColumnSpan="1"
+            HorizontalOptions="CenterAndExpand"
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="Title"
+            Text="{Binding Title}"
+            />
+
+        <Label 
+            Grid.Column="0"
+            Grid.Row="2"
+            HorizontalOptions="CenterAndExpand"
+            TextColor="Gray"
+            FontSize="Subtitle"
+            Text="{Binding Sub}"
+            />
+
+    </Grid>
     
-    
-    <ContentView.Content>
-        <StackLayout Margin="8">
-            <Image Source="{Binding Image}"  HeightRequest="80" Margin="0,10,0,0" />
-
-            <Label FontSize="18"
-                FontAttributes="Bold"
-                TextColor="Black"
-                HorizontalOptions="CenterAndExpand"
-                Text="{Binding Title}"/>
-
-            <Label FontSize="13"
-                HorizontalOptions="Center"
-                Text="{Binding Subtitle}"/>
-        </StackLayout>
-
-    </ContentView.Content>
+   
 </ContentView>

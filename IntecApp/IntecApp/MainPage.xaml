@@ -6,13 +6,13 @@
             x:Class="IntecApp.MainPage"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            >
+            NavigationPage.IconColor="Black">
 
-    <NavigationPage.TitleView>
+    <NavigationPage.TitleView >
         <Label
             FontAttributes="Bold"
             FontSize="Title"
-            HorizontalOptions="Start"
+            HorizontalOptions="Center"
             Text="Discovery"
             TextColor="Black"/>
 
@@ -22,7 +22,7 @@
         <local:HomePage Title="Home" IconImageSource="home.png"/>
         <local:DiscoveryPage Title="Discovery" IconImageSource="placeholder.png"/>
         <local:BookMarkPage Title="Book Mark" IconImageSource="bookmark.png"/>
-        <local:TopsFoodsPage Title="Top Foods" IconImageSource="fast_food.png"/>
+        <local:TopFoodsPage Title="Top Foods" IconImageSource="fast_food.png"/>
         <local:ProfilePage Title="Profile" IconImageSource="user.png"/>
 
     </TabbedPage.Children>

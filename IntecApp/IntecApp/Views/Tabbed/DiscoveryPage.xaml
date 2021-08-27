@@ -7,60 +7,75 @@
              mc:Ignorable="d"
              xmlns:local="clr-namespace:IntecApp.Views.Tabbed">
     <ContentPage.Content />
+
+
+    <NavigationPage.TitleView>
+        <Label Text="Detail" HorizontalTextAlignment="Start">
+
+        </Label>
+    </NavigationPage.TitleView>
+    
     <ScrollView>
-        <Grid Padding="30">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+        <Grid 
+            Padding="30"
+            RowDefinitions="*,*,*"
+            ColumnDefinitions="*, *">
+            
+            
             <local:DiscoveryCardView
                 Grid.Row="0"
                 Grid.Column="0"
+                Margin="20"
                 BindingContext="{Binding BarsAndHotelsMenuOption}">
                 <local:DiscoveryCardView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClicked" />
                 </local:DiscoveryCardView.GestureRecognizers>
             </local:DiscoveryCardView>
+            
             <local:DiscoveryCardView
                 Grid.Row="0"
                 Grid.Column="1"
+                Margin="20"
                 BindingContext="{Binding FineDiningMenuOption}">
                 <local:DiscoveryCardView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClicked" />
                 </local:DiscoveryCardView.GestureRecognizers>
             </local:DiscoveryCardView>
+            
             <local:DiscoveryCardView
                 Grid.Row="1"
                 Grid.Column="0"
+                Margin="20"
                 BindingContext="{Binding CafesMenuOption}">
                 <local:DiscoveryCardView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClicked" />
                 </local:DiscoveryCardView.GestureRecognizers>
             </local:DiscoveryCardView>
+            
             <local:DiscoveryCardView
                 Grid.Row="1"
                 Grid.Column="1"
+                Margin="20"
                 BindingContext="{Binding NearbyMenuOption}">
                 <local:DiscoveryCardView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClicked" />
                 </local:DiscoveryCardView.GestureRecognizers>
             </local:DiscoveryCardView>
+            
             <local:DiscoveryCardView
                 Grid.Row="2"
                 Grid.Column="0"
+                Margin="20"
                 BindingContext="{Binding FastFoodMenuOption}">
                 <local:DiscoveryCardView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClicked" />
                 </local:DiscoveryCardView.GestureRecognizers>
             </local:DiscoveryCardView>
+            
             <local:DiscoveryCardView
                 Grid.Row="2"
                 Grid.Column="1"
+                Margin="20"
                 BindingContext="{Binding FeaturedFoodsMenuOption}">
                 <local:DiscoveryCardView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClicked" />

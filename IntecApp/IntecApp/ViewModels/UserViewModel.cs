@@ -28,7 +28,10 @@ namespace IntecApp.ViewModels
                 if (String.IsNullOrEmpty(User.Email) || String.IsNullOrEmpty(User.Password))
                     await alertService.Alert("Error", "Campos Vacios", "OK");
                 else
+                {
                     await alertService.Alert("Bienvenido", $"Hola {User.Email}", "OK");
+                    await App.Current.MainPage.Navigation.PushAsync(new MainPage());
+                }
             });
 
             NavigateCommand = new Command(async () =>
