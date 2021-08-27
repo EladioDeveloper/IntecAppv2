@@ -6,9 +6,9 @@ Web App Reference [procesos.intec.edu.do](https://procesos.intec.edu.do)
 
 ## Screenshots / Clone APP
 
-<img width="300" src="screenshots/ss1.jpg">
-<img width="300" src="screenshots/ss2.jpg">
-<img width="300" src="screenshots/ss3.jpg">
+<img width="200" src="screenshots/ss1.jpg">
+<img width="200" src="screenshots/ss2.jpg">
+<img width="200" src="screenshots/ss3.jpg">
 
 ## Tools used
 
