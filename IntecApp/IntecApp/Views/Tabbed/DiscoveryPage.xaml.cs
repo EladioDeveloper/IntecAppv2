@@ -23,7 +23,7 @@ namespace IntecApp.Views.Tabbed
         {
             lastElementSelected.BackgroundColor = Color.White;
             var elementSelected = (DiscoveryCardView)sender;
-            elementSelected.BackgroundColor = Color.FromHex("#F9A602");
+            elementSelected.BackgroundColor = Color.FromHex("#f2ac22");
             lastElementSelected = elementSelected;
         }
     }
